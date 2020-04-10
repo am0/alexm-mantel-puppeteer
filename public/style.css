@@ -1,0 +1,41 @@
+body {
+	font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+	margin: 20px;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+a {
+	cursor: pointer;
+	color: #0076FF;
+	text-decoration: none;
+	transition: all 0.2s ease;
+	border-bottom: 1px solid white;
+}
+
+a:hover {
+	border-bottom: 1px solid #0076FF;
+}
+
+ul {
+	padding: 0;
+	list-style-type: none;
+	margin-left: 15px;
+}
+
+li {
+	margin-bottom: 10px;
+}
+
+li:before {
+	content: '–';
+	display: inline-block;
+	color: #999;
+	position: absolute;
+	margin-left: -15px;
+	transition: color 0.2s ease;
+}

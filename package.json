@@ -2,17 +2,16 @@
 	"name": "alexm-mantel-puppeteer",
 	"version": "1.0.0",
 	"description": "",
-	"main": "api/index.js",
+	"main": "dev.js",
+	"scripts": {
+	  "dev": "node dev.js"
+	},
 	"dependencies": {
+		"browserless": "^6.14.2",
 		"chrome-aws-lambda": "^2.1.1",
-		"puppeteer": "^2.1.1",
-		"puppeteer-core": "^2.1.1",
-		"browserless": "^6.14.2"
+		"puppeteer-core": "^2.1.1"
 	},
 	"devDependencies": {},
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
 	"author": "Alex Moyler",
 	"license": "ISC",
 	"repository": {
