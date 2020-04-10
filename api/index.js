@@ -9,6 +9,6 @@ module.exports = async function (req, res) {
 	}
 	const file = await getScreenshot(url, type);
 	res.statusCode = 200;
-	res.setHeader('Content-Type', 'image/\${type}');
+	res.setHeader('Content-Type', `image/\${type}`);
 	res.end(file);
 };
