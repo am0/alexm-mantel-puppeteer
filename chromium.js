@@ -9,8 +9,17 @@ async function getScreenshot(url, type, quality, fullPage) {
 	});
 
 	const page = await browser.newPage();
-	await page.goto(url);
-	const file = await page.screenshot({ type,  quality, fullPage });
+	await page.setViewport({
+		width: 1440,
+		height: 0
+	});
+	await page.goto(url, {
+		waitUntil: [
+			'domcontentloaded',
+			'load',
+		  ],
+	});
+	const file = await page.screenshot({ type, quality, fullPage });
 	await browser.close();
 	return file;
 }
