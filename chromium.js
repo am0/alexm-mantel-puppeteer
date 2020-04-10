@@ -6,7 +6,6 @@ async function getScreenshot(url, type, quality, fullPage) {
 		args: chrome.args,
 		executablePath: await chrome.executablePath,
 		headless: chrome.headless,
-		args: ['--font-render-hinting=none'],
 	});
 
 	const page = await browser.newPage();
